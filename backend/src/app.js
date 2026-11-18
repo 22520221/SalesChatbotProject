@@ -4,20 +4,19 @@ const cors = require("cors");
 
 const healthRoutes = require("./routes/healthRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
+const productRoutes = require("./routes/productRoutes");
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Health API
+// API routes
 app.use("/api/health", healthRoutes);
-
-// Categories API
 app.use("/api/categories", categoryRoutes);
+app.use("/api/products", productRoutes);
 
-// 404
+// 404 handler
 app.use((req, res) => {
     res.status(404).json({
         success: false,
@@ -26,3 +25,4 @@ app.use((req, res) => {
 });
 
 module.exports = app;
+
