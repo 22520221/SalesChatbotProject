@@ -64,6 +64,7 @@ Hệ quản trị: Microsoft SQL Server
 - [x] Kết nối SQL Server
 - [x] Xây dựng Categories API
 - [x] Xây dựng Products API
+- [x] Xây dựng Customers API
 - [ ] Xây dựng Orders API
 - [ ] Xây dựng Website React
 - [ ] Xây dựng Admin Dashboard
