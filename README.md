@@ -62,8 +62,8 @@ Hệ quản trị: Microsoft SQL Server
 - [x] Thiết kế Database
 - [x] Khởi tạo Backend Node.js + Express
 - [x] Kết nối SQL Server
-- [ ] Xây dựng Categories API
-- [ ] Xây dựng Products API
+- [x] Xây dựng Categories API
+- [x] Xây dựng Products API
 - [ ] Xây dựng Orders API
 - [ ] Xây dựng Website React
 - [ ] Xây dựng Admin Dashboard
