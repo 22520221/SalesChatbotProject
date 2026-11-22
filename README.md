@@ -66,7 +66,8 @@ Hệ quản trị: Microsoft SQL Server
 - [x] Xây dựng Products API
 - [x] Xây dựng Customers API
 - [x] Xây dựng Addresses API
-- [ ] Xây dựng Orders API
+- [x] Xây dựng Orders API
+- [x] Xây dựng OrderItems API
 - [ ] Xây dựng Website React
 - [ ] Xây dựng Admin Dashboard
 - [ ] Chatbot Messenger mô phỏng
