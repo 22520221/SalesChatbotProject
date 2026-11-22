@@ -10,6 +10,9 @@ const addressRoutes = require("./routes/addressRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const orderItemRoutes = require("./routes/orderItemRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
+const authRoutes = require("./routes/authRoutes");
+
+const { verifyToken, authorizeAdmin } = require("./middlewares/authMiddleware");
 
 const app = express();
 
@@ -25,6 +28,7 @@ app.use("/api/addresses", addressRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/order-items", orderItemRoutes);
 app.use("/api/payments", paymentRoutes);
+app.use("/api/auth", authRoutes);
 
 // 404 handler
 app.use((req, res) => {
