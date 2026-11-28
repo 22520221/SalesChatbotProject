@@ -11,6 +11,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const orderItemRoutes = require("./routes/orderItemRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const authRoutes = require("./routes/authRoutes");
+const policyRoutes = require("./routes/policyRoutes");
 
 const { verifyToken, authorizeAdmin } = require("./middlewares/authMiddleware");
 
@@ -28,7 +29,8 @@ app.use("/api/addresses", addressRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/order-items", orderItemRoutes);
 app.use("/api/payments", paymentRoutes);
-app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);   
+app.use("/api/policies", policyRoutes);
 
 // 404 handler
 app.use((req, res) => {
